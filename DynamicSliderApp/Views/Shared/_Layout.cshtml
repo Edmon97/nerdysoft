@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Slider</title>
+    <link href="~/Content/style.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/rzslider.css" rel="stylesheet" />
+</head>
+<body ng-app="sliderApp">
+
+    <div ng-controller="sliderCtrl" class="container">
+        <header>
+            <h1>Dynamic Slider</h1>
+        </header>
+
+        @RenderBody()
+
+    </div>
+
+    <script src="~/scripts/angular.min.js"></script>
+    <script src="~/scripts/ui-bootstrap-tpls.js"></script>
+    <script src="~/scripts/rzslider.js"></script>
+    @RenderSection("scripts", required: false)
+</body>
+</html>

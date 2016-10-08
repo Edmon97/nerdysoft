@@ -1,0 +1,26 @@
+﻿<div class="main">
+    <div class="control">
+        <button ng-click="start()" class="btn btn-success">Start</button>
+        <button ng-click="stop()" class="btn btn-danger">Stop</button>
+    </div>
+
+    <div class="control">
+        <label>
+            Max Value:
+            <input type="number" ng-model="minRangeSlider.options.ceil" class="form-control"/>
+        </label>
+
+        <label>
+            Step:
+            <input type="number" ng-model="minRangeSlider.options.step" max="{{minRangeSlider.options.ceil/2}}" min="1" class="form-control" />
+        </label>
+    </div>
+
+    <div class="slider">
+        <rzslider rz-slider-model="minRangeSlider.value" rz-slider-options="minRangeSlider.options"></rzslider>
+    </div>
+</div>
+
+@section scripts{
+    <script src="~/scripts/slider.js"></script>
+}

@@ -1,0 +1,30 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+	padding: 10px;
+}
+
+.control{
+	margin: 5px;
+}
+
+.slider{
+	margin: 5px;
+	padding: 5px;
+	border: 1px solid lightgray;
+}
+
+header {
+    background: #0db9f0;
+    color: #fff;
+    margin: -40px;
+    margin-bottom: 40px;
+    text-align: center;
+    padding: 40px 0;
+}
+h1 {
+    font-weight: 300;
+}
